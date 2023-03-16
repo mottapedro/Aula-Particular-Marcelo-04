@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Tela de login</title>
+</head>
+
+<body>
+    <!--Fazer um formulário onde o usuario não pode enviar os dados vazios(Preencer todos os dados) -> isso são os requisitos do preenchimento dos dads do formulário-->
+
+    <div class="container">
+        <form class="form" id="form">
+            <div class="from-control">
+                <label for="username">Usuário : </label>
+                <!--se o input estiver vazio, aplicamos uma borda vermelha ao elemento-->
+                <input type="text" id="username"><!--campo de o usuário digita os dados-->
+                <small>Error message</small>
+            </div>
+
+            <div class="from-control">
+                <label for="email">E-mail : </label>
+                <input type="email" id="email"><!--O HTML5 faz a validação do campo email-->
+                <small>Error message</small>
+            </div>
+
+            <div class="from-control">
+                <label for="password">Senha : </label>
+                <input type="password" id="password"><!-- type = "password valida o input como password"-->
+                <small>Error message</small>
+            </div>
+            <div class="from-control">
+                <label for="passwordtwo">Confirme a Senha : </label>
+                <input type="password" id="passwordtwo">
+                <small>Error message</small>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

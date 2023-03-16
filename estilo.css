@@ -1,0 +1,25 @@
+small {
+    visibility: hidden;/*retira a menssagem da tag small*/
+}
+
+.form {
+    display: inline-block;
+    justify-content: space-between;
+    justify-items: self-start;
+}
+
+input {
+    display: flex;
+}
+
+.form-control.success input {
+    border:  1px solid #4ECA;
+}
+
+.form-control.error input {
+    border:  1px solid #DB545A;
+}
+
+.form-control.error small {
+ visibility: visible;
+}
